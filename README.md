@@ -56,7 +56,7 @@ If you did the steps correctly, you should see something like this output.
 
 - If you see output like the above, the file you are opening is either not a .csv file, or hasn't been downloaded correctly.
 - Ensure you downloaded the file by right clicking, and choosing `Save link as...`.
-- If you incorrectly chose the wrong file, you can accidentaly download a html page instead.
+- If you incorrectly chose the wrong file, you can accidentally  download a html page instead.
 - When you open up the file, it should have lots of lines like this:
 
 ```
