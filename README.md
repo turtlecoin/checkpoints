@@ -4,8 +4,9 @@
 
 ### Setup
 
-- Right click [this link](https://github.com/turtlecoin/checkpoints/raw/master/checkpoints.csv) and choose `Save link as...` to download the latest checkpoints.csv.
-- Place checkpoints.csv in the same folder as your TurtleCoind daemon
+- Right click these links [link-1](https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints.csv) and [link-2](https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints-1M.csv) and choose `Save link as...` to download the latest checkpoints.
+- Place both checkpoint files in the same folder as your TurtleCoind daemon
+- Combine them with this command `cat checkpoints.csv checkpoints-1M.csv > checkpoints-all.csv`
 - You can get TurtleCoind from here if you don't have it already: https://latest.turtlecoin.lol
 - Make sure you shut down any GUI wallets, or any other instances of TurtleCoind.
 
@@ -17,7 +18,7 @@
 - This can easily be done by moving to the TurtleCoind directory in Windows Explorer, then typing `cmd` in the search bar and hitting enter:
 
 ![Opening cmd](https://i.imgur.com/QoNwYtB.png)
-- Finally, type `TurtleCoind.exe --load-checkpoints checkpoints.csv` in the command prompt.
+- Finally, type `TurtleCoind.exe --load-checkpoints checkpoints-all.csv` in the command prompt.
 
 #### Linux, Apple
 
@@ -27,7 +28,7 @@
 
 ![Opening terminal](https://i.imgur.com/Rd5TmQc.png)
 
-- Finally, type `./TurtleCoind --load-checkpoints checkpoints.csv` in the terminal.
+- Finally, type `./TurtleCoind --load-checkpoints checkpoints-all.csv` in the terminal.
 
 ### Expected Output
 
@@ -37,7 +38,7 @@ If you did the steps correctly, you should see something like this output.
 2018-May-13 11:58:39.654478 INFO    Welcome to TurtleCoin v0.5.0.1260 ()
 2018-May-13 11:58:39.654914 INFO    Module folder: TurtleCoind
 2018-May-13 11:58:39.655249 INFO    Loading Checkpoints for faster initial sync...
-2018-May-13 11:58:40.854979 INFO    Loaded 435695 checkpoints from checkpoints.csv
+2018-May-13 11:58:40.854979 INFO    Loaded 435695 checkpoints from checkpoints-all.csv
 ```
 
 - TurtleCoind will then start syncing from checkpoints.
@@ -72,17 +73,17 @@ If you did the steps correctly, you should see something like this output.
 
 ```
 2018-May-13 12:14:57.544286 INFO    Loading Checkpoints for faster initial sync...
-2018-May-13 12:14:57.544569 ERROR   Could not load checkpoints file: checkpoints.csv
+2018-May-13 12:14:57.544569 ERROR   Could not load checkpoints file: checkpoints-all.csv
 2018-May-13 12:14:57.544823 ERROR   Exception: Failed to load checkpoints
 ```
 
 - If you see output like the above, it means the file isn't present in the directory you are in.
-- Make sure you have placed the checkpoints.csv file in the same directory as TurtleCoind.
+- Make sure you have placed the checkpoints-all.csv file in the same directory as TurtleCoind.
 
 #### TurtleCoind.exe is not recognized / No such file or directory
 
 ```
-C:\Users\gentoo>TurtleCoind.exe --load-checkpoints checkpoints.csv
+C:\Users\gentoo>TurtleCoind.exe --load-checkpoints checkpoints-all.csv
 'TurtleCoind.exe' is not recognized as an internal or external command,
 operable program or batch file.
 ```
