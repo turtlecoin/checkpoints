@@ -12,6 +12,8 @@
 
 ## Command Line Only Setup
 
+First, make sure you have `wget` and `cat` installed.
+
 `wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints.csv`
 
 `wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints-1M.csv`
