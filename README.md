@@ -12,7 +12,6 @@
 
 ## Command Line Only Setup
 
-
 `wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints.csv`
 
 `wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints-1M.csv`
