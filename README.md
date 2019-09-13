@@ -12,7 +12,7 @@
 
 ## Command Line Only Setup
 
-First, make sure you have `wget` and `cat` installed.
+First, make sure you have `wget` and `cat` installed. If you're on Windows, you can grab wget for windows from [here](http://gnuwin32.sourceforge.net/packages/wget.htm). `cat` should be preinstalled on nearly everything.
 
 `wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints.csv`
 
