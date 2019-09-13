@@ -12,11 +12,12 @@
 
 ## Command Line Only Setup
 
-```
-wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints.csv
-wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints-1M.csv
-cat checkpoints.csv checkpoints-1M.csv > checkpoints-all.csv
-```
+
+`wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints.csv`
+
+`wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints-1M.csv`
+
+`cat checkpoints.csv checkpoints-1M.csv > checkpoints-all.csv`
 
 The checkpoint file is now at `checkpoints-all.csv`
 
