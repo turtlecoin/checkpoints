@@ -10,6 +10,16 @@
 - You can get TurtleCoind from here if you don't have it already: https://latest.turtlecoin.lol
 - Make sure you shut down any GUI wallets, or any other instances of TurtleCoind.
 
+## Command Line Only Setup
+
+```
+wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints.csv
+wget https://raw.githubusercontent.com/turtlecoin/checkpoints/master/checkpoints-1M.csv
+cat checkpoints.csv checkpoints-1M.csv > checkpoints-all.csv
+```
+
+The checkpoint file is now at `checkpoints-all.csv`
+
 ### Usage
 
 #### Windows
