@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/site.webmanifest">
+    <link rel="mask-icon" href="./ico/safari-pinned-tab.svg" color="#00853d">
+    <link rel="shortcut icon" href="./ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00853d">
+    <meta name="msapplication-config" content="/ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="TurtleCoin Checkpoints - How to Use">
+    <meta name="Description" content="So you want to use checkpoints but don't know how? We'll make this painless.">
+    <meta property="og:description" content="So you want to use checkpoints but don't know how? We'll make this painless.">
+    <meta property="og:image" content="https://turtlecoin.github.io/blockchain-explorer/img/turtlecoin_shield.png">
+    <meta name="Keywords" content="TurtleCoin,checkpoints,blockchain">
+    <title>[TRTL] TurtleCoin Checkpoints</title>
+    <link rel="stylesheet" href="./css/third-party.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/config.js"></script>
+    <script src="./js/third-party.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./index.html">
+        <img src="./img/turtlecoin_logo.png" height="100">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="siteNavBar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="siteNavBar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./"><i class="fas fa-link"></i>&nbsp; Checkpoints</a>
+          <a class="navbar-item is-active" href="./use.html"><i class="fas fa-question-circle"></i>&nbsp; How To Use</a>
+          <a class="navbar-item" href="./help.html"><i class="fas fa-people-carry"></i>&nbsp; How to Help</a>
+          <a class="navbar-item" href="./dev.html"><i class="fas fa-code"></i>&nbsp; For Developers</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="title has-trtl-green"><i class="fas fa-question-circle"></i>&nbsp; How to Use</h1>
+          <div class="container">
+            <h2 class="subtitle">Obtaining The Latest TurtleCoin&reg; Software</h2>
+            <div class="content">
+              <ol type="1">
+                <li>Proceed on over to <a href="http://latest.turtlecoin.lol" target="_blank">TurtleCoin&reg; Releases</a> to grab the latest copy for your system.</li>
+              </ol>
+            </div>
+            <h2 class="subtitle">Obtaining TurtleCoin&reg; Checkpoints - Browser</h2>
+            <div class="content">
+              <ol type="1">
+                <li>Right click one of the links on the <a href="./">Checkpoints</a> page, and select <em>Save link as...</em></li>
+                <li>Save the file with a name that is easy to remember. (ie. <em>checkpoints.csv</em>)</li>
+              </ol>
+            </div>
+            <h2 class="subtitle">Obtaining TurtleCoin&reg; Checkpoints - CLI Mode</h2>
+            <div class="content">
+              <ol type="1">
+                <li>Copy one of the links on the <a href="./">Checkpoints</a> page</li>
+                <li>Download the checkpoints via curl:<br />
+                  &nbsp;&nbsp;<em>curl &lt;link&gt; -o checkpoints.csv</em><br /><br />
+                  &nbsp;&nbsp;<code>curl <span id="defaultIPFSGateway"></span> -o checkpoints.csv</code>
+                </li>
+              </ol>
+            </div>
+            <h2 class="subtitle">Using the Checkpoints - Windows</h2>
+            <div class="content">
+              <ol type="1">
+                <li>Copy the checkpoints you downloaded into the same folder as your copy of <em>TurtleCoind.exe</em></li>
+                <li>Open a command prompt window in the folder where you just placed the checkpoints file.<br /><br />
+                  &nbsp;&nbsp;<strong>ProTip:</strong> Type <em>cmd</em> in Windows Explorer when in the folder to start command prompt from that folder.<br /><br />
+                  <img src="https://camo.githubusercontent.com/4aa572de06de175428fb25dd4d96abec7b98c6f2/68747470733a2f2f692e696d6775722e636f6d2f516f4e775974422e706e67" />
+                </li>
+                <li>In the command prompt window, type the following to start the daemon with the checkpoints:<br /><br />
+                  &nbsp;&nbsp;<code>TurtleCoind.exe --load-checkpoints checkpoints.csv</code>
+                </li>
+              </ol>
+            </div>
+            <h2 class="subtitle">Using the Checkpoints - Linux / Apple</h2>
+            <div class="content">
+              <ol type="1">
+                <li>Copy the checkpoints you downloaded into the same folder as your copy of <em>TurtleCoind</em></li>
+                <li>Open a terminal window in the folder where you just placed the checkpoints file.<br /><br />
+                  &nbsp;&nbsp;<strong>ProTip:</strong> Your file manager may provide the ability to open a terminal in your current directory. Right-click in the folder to see if the option is available.<br /><br />
+                  <img src="https://camo.githubusercontent.com/e36a87d83f63f51eab46740b4e4f1539a2ab27ff/68747470733a2f2f692e696d6775722e636f6d2f526435546d51632e706e67" />
+                </li>
+                <li>In the terminal window, type the following to start the daemon with the checkpoints:<br /><br />
+                  &nbsp;&nbsp;<code>./TurtleCoind --load-checkpoints checkpoints.csv</code>
+                </li>
+              </ol>
+            </div>
+            <h2 class="subtitle">Expected Output</h2>
+            <div class="content">
+              <p>If everything went well, you will see output such as what is shown below.</p>
+              <blockquote>
+                TurtleCoin v0.19.0.1293 ()<br />
+                This software is distributed under the General Public License v3.0<br />
+                <br />
+                Copyright 2018-2019, The TurtleCoin Developers<br />
+                <br />
+                Additional Copyright(s) may apply, please see the included LICENSE file for more information.<br />
+                If you did not receive a copy of the LICENSE, please visit:<br />
+                https://github.com/turtlecoin/turtlecoin/blob/master/LICENSE<br />
+                <br />
+                <br />
+                2019-Oct-13 14:44:31.470231 INFO    Program Working Directory: "/home/turtlecoin/turtlecoin"<br />
+                2019-Oct-13 14:44:31.474230 INFO    Loading Checkpoints for faster initial sync...<br />
+                2019-Oct-13 14:44:33.122273 INFO    Loaded 1910844 checkpoints from checkpoints.csv<br />
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h1 class="title has-trtl-green"><i class="has-trtl-red fas fa-heart-broken"></i>&nbsp; Oh No! Something Went Wrong</h1>
+          <div class="container">
+            <h2 class="subtitle">Invalid Checkpoint File Format</h2>
+            <div class="content">
+              <blockquote>
+                2018-May-13 12:10:08.325056 INFO    Loading Checkpoints for faster initial sync...<br />
+                2018-May-13 12:10:08.339667 ERROR   Invalid checkpoint file format<br />
+                2018-May-13 12:10:08.341758 ERROR   Exception: Failed to load checkpoints<br />
+              </blockquote>
+              <p><strong>Solution: </strong> This error occurs if you attempt to use a file that is corrupted or not a CSV file. Please re-download the file, verify the filename, and try again.</p>
+            </div>
+            <h2 class="subtitle">Failed to Load Checkpoints</h2>
+            <div class="content">
+              <blockquote>
+                2018-May-13 12:10:08.325056 INFO    Loading Checkpoints for faster initial sync...<br />
+                2018-May-13 12:10:08.339667 ERROR   Could not load checkpoints file: checkpoints.csv<br />
+                2018-May-13 12:10:08.341758 ERROR   Exception: Failed to load checkpoints<br />
+              </blockquote>
+              <p><strong>Solution: </strong> This error occurs if the file is not present in the directory you are in. Please make sure that the checkpoints.csv file is in the same directory as the one you are working in.</p>
+            </div>
+            <h2 class="subtitle">TurtleCoind.exe is not recognized / No such file or directory</h2>
+            <div class="content">
+              <blockquote>
+                C:\Users\gentoo>TurtleCoind.exe --load-checkpoints checkpoints-all.csv<br />
+                'TurtleCoind.exe' is not recognized as an internal or external command,<br />
+                operable program or batch file.
+              </blockquote>
+              <p><strong>Solution: </strong> You are not currently in the directory in which TurtleCoind resides. Please verify you are in the correct place and then try again.</p>
+            </div>
+            <h2 class="subtitle">IO Error</h2>
+            <div class="content">
+              <blockquote>
+                2018-May-13 11:58:40.857058 INFO    Opening DB in /home/zach/.TurtleCoin/DB<br />
+                2018-May-13 11:58:40.858174 ERROR   DB Error. DB can't be opened in /home/zach/.TurtleCoin/DB. Error: IO error: While lock file: /home/zach/.TurtleCoin/DB/LOCK: Resource temporarily unavailable<br />
+                2018-May-13 11:58:40.873692 ERROR   Exception: IO error<br />
+              </blockquote>
+              <p><strong>Solution: </strong> Close any other running copies of TurtleCoind and try again.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="content has-text-centered">
+        <p>
+          Copyright &copy; 2019 The TurtleCoin&reg; Developers. The source code is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0</a>.
+        </p>
+        <p>
+          <a href="https://turtlepay.io"><img src="https://badge.turtlepay.io/" alt="Powered by TurtlePay" /></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

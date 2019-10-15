@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/site.webmanifest">
+    <link rel="mask-icon" href="./ico/safari-pinned-tab.svg" color="#00853d">
+    <link rel="shortcut icon" href="./ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00853d">
+    <meta name="msapplication-config" content="/ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="TurtleCoin Checkpoints - How to Use">
+    <meta name="Description" content="Help us distribute TurtleCoin checkpoints via IPFS. Don't worry, it's so easy anyone can do it.">
+    <meta property="og:description" content="Help us distribute TurtleCoin checkpoints via IPFS. Don't worry, it's so easy anyone can do it.">
+    <meta property="og:image" content="https://turtlecoin.github.io/blockchain-explorer/img/turtlecoin_shield.png">
+    <meta name="Keywords" content="TurtleCoin,checkpoints,blockchain">
+    <title>[TRTL] TurtleCoin Checkpoints</title>
+    <link rel="stylesheet" href="./css/third-party.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/config.js"></script>
+    <script src="./js/third-party.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./index.html">
+        <img src="./img/turtlecoin_logo.png" height="100">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="siteNavBar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="siteNavBar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./"><i class="fas fa-link"></i>&nbsp; Checkpoints</a>
+          <a class="navbar-item" href="./use.html"><i class="fas fa-question-circle"></i>&nbsp; How To Use</a>
+          <a class="navbar-item is-active" href="./help.html"><i class="fas fa-people-carry"></i>&nbsp; How to Help</a>
+          <a class="navbar-item" href="./dev.html"><i class="fas fa-code"></i>&nbsp; For Developers</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="title has-trtl-green"><i class="fas fa-people-carry"></i>&nbsp; How to Help</h1>
+          <div class="container">
+            <h2 class="subtitle">Help Distribute TurtleCoin&reg; Checkpoints via <a href="https://ipfs.io" target="_blank">IPFS</a></h2>
+            <div class="content">
+              <p>TurtleCoin&reg; needs to sync when you first launch it to grab a copy of the whole blockchain. We use checkpoints to make that sync faster. Serving checkpoints can be tough for just one server to host, so we have made an easy guide for people who want to help distribute the checkpoints! With <a href="https://ipfs.io" target="_blank">IPFS</a> we can create a swarm of decentralized nodes that host checkpoints for the rest of the community.</p>
+              <p>Follow the directions below to get started.</p>
+              <p>You will need the following:</p>
+              <ul>
+                <li><a href="https://nodejs.org" target="_blank">Node.js 10+</a></li>
+                <li><a href="https://git-scm.com/downloads" target="_blank">Git</a></li>
+              </ul>
+              <p>Once you have Node.js installed, perform the following steps:
+              <p>
+              <ol type="1">
+                <li>Clone the <a href="https://github.com/turtlecoin/checkpoints-ipfs-helper" target="_blank">TurtleCoin&reg; Checkpoints IPFS Helper</a> package from <a href="https://github.com" target="_blank">GitHub</a><br /><br />
+                  <code>
+                  git clone https://github.com/turtlecoin/checkpoints-ipfs-helper</code><br /><br />
+                </li>
+                <li>Enter the newly cloned directory.<br /><br />
+                  <code>cd checkpoints-ipfs-helper</code><br /><br />
+                </li>
+                <li>Install the package dependencies<br /><br />
+                  <code>npm install</code><br /><br />
+                </li>
+                <li>Start the script<br /><br /><code>npm start</code><br /><br /></li>
+              </ol>
+              <p>After a few moments you will see output such as shown below:</p>
+              <blockquote>
+                > turtlecoin-checkpoints-ipfs-helper@0.0.2 /home/travis/build/turtlecoin/checkpoints-ipfs-helper<br />
+                > node index.js<br />
+                <br />
+                Tue, 15 Oct 2019 01:08:02 GMT: [INFO] Starting IPFS node in: /home/travis/TurtleCoinIPFS<br />
+                Tue, 15 Oct 2019 01:08:03 GMT: [INFO] IPFS node started<br />
+                Tue, 15 Oct 2019 01:08:03 GMT: [INFO] Waiting for IPFS node to connect to swarm...<br />
+                Tue, 15 Oct 2019 01:08:08 GMT: [INFO] IPFS node connected to swarm...<br />
+                Tue, 15 Oct 2019 01:08:08 GMT: [INFO] Detected new checkpoints IPFS hash: QmWNWv8NjbAZuLSCw3ZNuJJ7y1wLCRsDq2kpcrMaoowwNc<br />
+                Tue, 15 Oct 2019 01:08:08 GMT: [INFO] Attempting to pin locally: QmWNWv8NjbAZuLSCw3ZNuJJ7y1wLCRsDq2kpcrMaoowwNc<br />
+                Tue, 15 Oct 2019 01:13:31 GMT: [INFO] Pinned successfully: QmWNWv8NjbAZuLSCw3ZNuJJ7y1wLCRsDq2kpcrMaoowwNc
+              </blockquote>
+              <p><strong>Note:</strong> The actual time to pin the hash varies based upon your Internet connection, firewall(s), network configuration, and the current IPFS network load. Don't worry if it takes a while to pin the hash.</p>
+              <p>Leave the script running to continue to help distribute the checkpoints via IPFS. The script will automatically check for an updated checkpoints hash to pin once per hour.</p>
+              <p>If you would rather use a tool like <a href="http://pm2.keymetrics.io/" target="_blank">PM2</a> or <a href="https://www.npmjs.com/package/forever" target="_blank">forever</a> to keep the script running, see below.</p>
+            </div>
+            <h2 class="subtitle">Using PM2</h2>
+            <div class="content">
+              <p>Keeping the service running with PM2 is easy.</p>
+              <p>If you do not already have PM2 installed, issue the following command in your terminal:</p>
+              <p><code>npm install -g pm2@latest && pm2 startup</code></p>
+              <p>Add the script to PM2 by issuing the following command in your terminal:</p>
+              <p><code>pm2 start index.js --name checkpoints-ipfs-helper && pm2 save</code></p>
+            </div>
+            <h2 class="subtitle">Using forever</h2>
+            <div class="content">
+              <p>Keeping the service running with forever is easy.</p>
+              <p>If you do not already have forever installed, issue the following command in your terminal:</p>
+              <p><code>npm install -g forever</code></p>
+              <p>Let forever manage the script using the following command in your terminal:</p>
+              <p><code>forever start index.js</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="content has-text-centered">
+        <p>
+          Copyright &copy; 2019 The TurtleCoin&reg; Developers. The source code is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0</a>.
+        </p>
+        <p>
+          <a href="https://turtlepay.io"><img src="https://badge.turtlepay.io/" alt="Powered by TurtlePay" /></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

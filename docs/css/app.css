@@ -1,0 +1,185 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  padding: 3rem 1.5rem 1rem;
+}
+
+.navbar-item img {
+  max-height: 3.5rem !important;
+}
+
+.column-header {
+  display: block;
+  background-color: #00853d;
+}
+
+.has-trtl-green {
+  color: #00853d !important;
+}
+
+.has-trtl-red {
+  color: #de5f5f !important;
+}
+
+.is-trtl-black {
+  background-color: #212721 !important;
+  color: #fff !important;
+}
+
+.is-trtl-green {
+  background-color: #00853d !important;
+  color: #fff !important;
+}
+
+.is-trtl-secondary-green {
+  background-color: #40c18e !important;
+  color: #fff !important;
+}
+
+.is-trtl-red {
+  background-color: #de5f5f !important;
+  color: #fff !important;
+}
+
+.is-really-fullwidth {
+  width: 100% !important;
+}
+
+.is-fixed-width-150 {
+  width: 150px !important;
+}
+
+.navbar-item {
+  font-weight: bold !important;
+}
+
+.same-height {
+  align-items: stretch;
+  min-height: 293px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.field-names {
+  font-weight: 500;
+}
+
+.sorting,
+.sorting_asc,
+.sorting_desc {
+  background: none !important;
+}
+
+#transactionPool,
+#recentBlocks,
+#transactions,
+#transactionInputs,
+#transactionOutputs,
+#paymentIdTransactions,
+.table {
+  font-size: 9pt;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+#transactionNonce {
+  word-wrap: break-word;
+}
+
+#paymentIdTransactions_filter,
+#paymentIdTransactions_paginate,
+#paymentIdTransactions_length {
+  font-size: 8pt !important;
+}
+
+#poolPieChart {
+  width: 100%;
+}
+
+#globalHashRate {
+  font-weight: bold;
+}
+
+#transactionPool_wrapper {
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+.dataTables_wrapper {
+  width: 100% !important;
+}
+
+.dataTables_empty {
+  text-align: center !important;
+}
+
+.badge[data-badge]::after {
+  background-color: #212721 !important;
+}
+
+.chart {
+  width: 100%;
+  min-height: 242px;
+}
+
+.bigChart {
+  width: 100%;
+  min-height: 640px;
+}
+
+a {
+  color: #00853d;
+}
+
+.navbar-link.is-active,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:hover {
+  color: #00853d !important;
+}
+
+.trtl-amount,
+.trtl-fee,
+.trtl-type,
+.trtl-size,
+.trtl-txns,
+.trtl-datetime,
+.trtl-icon {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.trtl-amount,
+.trtl-fee {
+  width: 175px;
+}
+
+.trtl-type {
+  width: 100px;
+}
+
+.trtl-size,
+.trtl-txns {
+  width: 100px;
+}
+
+.trtl-datetime {
+  width: 280px;
+}
+
+.trtl-icon {
+  width: 15px;
+}
+
+.is-ours {
+  background-color: #40c18e !important;
+}
